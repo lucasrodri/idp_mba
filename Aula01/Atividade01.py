@@ -21,8 +21,10 @@ print("\n")
 Podemos calcular o tempo necessário para vacinar toda a população elegível dividindo o número de pessoas que precisam ser vacinadas 
 pelo número de pessoas que são vacinadas por dia.
 """
+#Doses aplicadas até o dia 9 de julho de 2021
+doses_aplicadas_total = 82908617
 #Doses aplicadas depois do dia 9 de julho de 2021
-doses_aplicadas_total = 82908617 + 994468
+doses_aplicadas_total = doses_aplicadas_total + 994468
 #Doses aplicadas por dia (de acordo com o dia 9 de julho de 2021)
 doses_aplicadas_dia = 994468
 #dias necessários:

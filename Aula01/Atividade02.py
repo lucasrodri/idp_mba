@@ -17,6 +17,19 @@ print(f"Isso representa uma queda percentual de {queda_percentual:.2f}% entre 20
 
 print("\n")
 
+###Fazendo a diferença percentual:
+
+total2019 = 65229668 + 61909343 + 50078060 + 21519066 + 11410989
+pobres2019p = (pobres2019 * 100) / total2019
+print(f"Pobres percentual {pobres2019p}")
+
+total_ago2020 = 50176044 + 76590769 + 56859091 + 19185258 + 8930353
+pobres_ago2020p = (pobres_ago2020 * 100) / total_ago2020
+print(f"Pobres percentual agosto de 2020 {pobres_ago2020p}")
+
+quedap = pobres2019p - pobres_ago2020p
+print(f"A queda percentual foi: {quedap}")
+
 #Letra b
 """
 2019
@@ -32,3 +45,17 @@ queda = ricos2019 - ricos_ago2020
 queda_percentual = (ricos2019 - ricos_ago2020) / ricos2019 * 100
 print(f"O número de ricos no Brasil caiu {queda/(1*(10**6)):.2f} milhoes entre 2019 e agosto de 2020.")
 print(f"Isso representa uma queda percentual de {queda_percentual:.2f}% entre 2019 e agosto de 2020.")
+
+
+###Fazendo a diferença percentual:
+
+total2019 = 65229668 + 61909343 + 50078060 + 21519066 + 11410989
+ricos2019p = (ricos2019 * 100) / total2019
+print(f"Ricos percentual {ricos2019p}")
+
+total_ago2020 = 50176044 + 76590769 + 56859091 + 19185258 + 8930353
+ricos_ago2020p = (ricos_ago2020 * 100) / total_ago2020
+print(f"Ricos percentual agosto de 2020 {ricos_ago2020p}")
+
+quedap = ricos2019p - ricos_ago2020p
+print(f"A queda percentual foi: {quedap}")
