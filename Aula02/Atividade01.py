@@ -14,10 +14,12 @@ temperatura = float(temperatura)
 #Retornando ao usuário a informação sobre a temperatura de acordo com a tabela:
 if temperatura < 0:
     print("Hoje tá congelante.")
-elif temperatura <= 10:
+elif temperatura < 10.1:
     print("Tá um muito frio hoje!")
-elif temperatura <= 17:
+elif temperatura < 17.1:
     print("Hoja tá fazendo um friozinho.")
+elif temperatura < 24.1:
+    print("Hoja tá bem ameno.")
 elif temperatura <= 30:
     print("Tá um calor hoje!!!")
 else:
