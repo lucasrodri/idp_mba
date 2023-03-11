@@ -21,14 +21,14 @@ print("\n")
 
 total2019 = 65229668 + 61909343 + 50078060 + 21519066 + 11410989
 pobres2019p = (pobres2019 * 100) / total2019
-print(f"Pobres percentual {pobres2019p}")
+print(f"Pobres percentual {pobres2019p:.2f}%")
 
 total_ago2020 = 50176044 + 76590769 + 56859091 + 19185258 + 8930353
 pobres_ago2020p = (pobres_ago2020 * 100) / total_ago2020
-print(f"Pobres percentual agosto de 2020 {pobres_ago2020p}")
+print(f"Pobres percentual agosto de 2020 {pobres_ago2020p:.2f}%")
 
 quedap = pobres2019p - pobres_ago2020p
-print(f"A queda percentual foi: {quedap}")
+print(f"A queda percentual foi: {quedap:.2f}%")
 
 #Letra b
 """
@@ -51,11 +51,11 @@ print(f"Isso representa uma queda percentual de {queda_percentual:.2f}% entre 20
 
 total2019 = 65229668 + 61909343 + 50078060 + 21519066 + 11410989
 ricos2019p = (ricos2019 * 100) / total2019
-print(f"Ricos percentual {ricos2019p}")
+print(f"Ricos percentual {ricos2019p:.2f}%")
 
 total_ago2020 = 50176044 + 76590769 + 56859091 + 19185258 + 8930353
 ricos_ago2020p = (ricos_ago2020 * 100) / total_ago2020
-print(f"Ricos percentual agosto de 2020 {ricos_ago2020p}")
+print(f"Ricos percentual agosto de 2020 {ricos_ago2020p:.2f}%")
 
 quedap = ricos2019p - ricos_ago2020p
-print(f"A queda percentual foi: {quedap}")
+print(f"A queda percentual foi: {quedap:.2f}%")
