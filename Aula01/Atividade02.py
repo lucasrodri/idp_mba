@@ -1,3 +1,11 @@
+#Exemplo do uso de format:
+#numero = 3.1415
+#print("O número é {:.2f}".format(numero))
+
+#Exemplo usando f-strings:
+#numero = 3.1415
+#print(f"O número é {numero:.2f}")
+
 #Letra a
 #Número de pobres em 2019 e ago.2020
 pobres2019 = 65229668

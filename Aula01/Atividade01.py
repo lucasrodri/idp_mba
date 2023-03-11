@@ -4,6 +4,12 @@
 populacao_brasileira = 212*(10**6)
 #Não elegíveis (menores de 18 anos) -> 21%
 #Elegíveis = 100% - 21% = 79%
+
+#regra de 3:
+#populacao_brasileira -> 100
+#elegiveis -> 79
+#elegiveis = (populacao_brasileira*79)/100
+
 elegiveis = 0.79 * populacao_brasileira
 print(f"Havia cerca de {elegiveis/(1*(10**6)):.2f} milhões de brasileiros elegíveis para a vacinação em 9 de julho de 2021.")
 
