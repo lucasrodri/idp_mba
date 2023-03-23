@@ -13,45 +13,23 @@ Esta atividade é parecida, mas em vez de uma temperatura qualquer, peça ao usu
 Dica: para saber a qual capital pertence cada temperatura, use a posição do valor na lista, o índice.
 """
 temperaturas = []
-cidades = []
+cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Brasília', 'Recife']
 
-cidade = "São Paulo"
-cidades.append(cidade)
-temperatura = float(input(f"Digite a temperatura de {cidade}: "))
-temperaturas.append(temperatura)
-
-cidade = "Rio de Janeiro"
-cidades.append(cidade)
-temperatura = float(input(f"Digite a temperatura de {cidade}: "))
-temperaturas.append(temperatura)
-
-cidade = "Belo Horizonte"
-cidades.append(cidade)
-temperatura = float(input(f"Digite a temperatura de {cidade}: "))
-temperaturas.append(temperatura)
-
-cidade = "Brasília"
-cidades.append(cidade)
-temperatura = float(input(f"Digite a temperatura de {cidade}: "))
-temperaturas.append(temperatura)
-
-cidade = "Recife"
-cidades.append(cidade)
-temperatura = float(input(f"Digite a temperatura de {cidade}: "))
-temperaturas.append(temperatura)
+for i in range(len(cidades)):
+    temperatura = float(input(f"Digite a temperatura em {cidades[i]}: "))
+    temperaturas.append(temperatura)
 
 for indice, temperatura in enumerate(temperaturas):
     if temperatura < 0:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é congelante.")
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está congelante.")
     elif temperatura <= 10:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é muito frio.")
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está muito frio.")
     elif temperatura <= 17:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é friozinho.")
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está friozinho.")
     elif temperatura <= 24:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é ameno.")
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está ameno.")
     elif temperatura <= 30:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é calor.")
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está calor.")
     else:
-        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC é muito calor.")
-
+        print(f"Em {cidades[indice]} a temperatura de {temperatura}ºC, está muito calor.")
 
