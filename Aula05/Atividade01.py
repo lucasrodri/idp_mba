@@ -43,3 +43,18 @@ for estado in estados:
         total += estado["doses"]
 print(f"Total de doses aplicadas na região norte: {total}")
 print(f"Proporção desse total em relação a todo o Brasil: {total / sum([estado['doses'] for estado in estados]) * 100:.2f}%")
+
+"""
+import statistics as st
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#Calculando a média
+media = st.mean(lista)
+#Calculando a mediana
+mediana = st.median(lista)
+#Calculando a moda
+moda = st.mode(lista)
+#Calculando o desvio padrão
+desvio_padrao = st.stdev(lista)
+#Calculando a variância
+variancia = st.variance(lista)
+"""
