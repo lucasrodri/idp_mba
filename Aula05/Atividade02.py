@@ -32,7 +32,7 @@ print(f"Nota média de bolsistas: {media:.2f}")
 media = sum([aluno["nota"] for aluno in alunos if not aluno["bolsista"]]) / len([aluno for aluno in alunos if not aluno["bolsista"]])
 print(f"Nota média de não bolsistas: {media:.2f}")
 for aluno in alunos:
-    aluno["aprovado"] = aluno["faltas"] > nfaltas and aluno["nota"] >= 7.0
+    aluno["aprovado"] = aluno["faltas"] < nfaltas and aluno["nota"] >= 7.0
 print("Nome\tIdade\tBolsista\tFaltas\tNota\tAprovado")
 for aluno in alunos:
     bolsista = "Sim" if aluno['bolsista'] else "Não"
