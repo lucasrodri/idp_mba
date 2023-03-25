@@ -9,8 +9,14 @@ Crie um programa que calcula a sequência até 30 termos.
 
 ant = 0
 atual = 1
-for i in range(30):
-    print(i+1, atual)
-    atual = atual + ant
-    ant = atual - ant
+#for i in range(30):
+#    print(i+1, atual)
+#    ant, atual = atual, atual + ant
+
+#Como não foi ensinado range, faça assim:
+cont = 1
+while cont <= 30:
+    print(cont, atual)
+    ant, atual = atual, atual + ant
+    cont += 1
 
